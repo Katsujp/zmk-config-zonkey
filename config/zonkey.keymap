@@ -261,10 +261,10 @@
 
         marks_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                        &kp MINUS        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS
-&trans  &trans  &trans  &trans  &trans  &trans    &trans                      &kp SLASH        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK
-&trans  &trans  &trans  &trans  &trans  &trans    &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD       &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans                                &trans           &trans                                                           &trans
+&trans          &trans     &kp EQUAL   &trans     &kp TILDE                                  &kp BACKSLASH  &trans                &trans                 &kp PIPE        &kp PERCENT
+&kp AT          &kp ASTRK  &kp DOLLAR  &trans     &trans     &trans           &kp BACKSLASH  &kp HASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&kp LEFT_SHIFT  &trans     &kp EXCL    &kp CARET  &trans     &kp BACKSLASH    &trans         &kp AMPERSAND  &kp MINUS             &trans                 &trans          &trans
+&trans          &trans     &trans      &trans     &trans     &trans                          &trans         &trans                                                                        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
