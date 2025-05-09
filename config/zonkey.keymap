@@ -55,7 +55,7 @@
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
+            key-positions = <1 10>;
         };
 
         minus {
