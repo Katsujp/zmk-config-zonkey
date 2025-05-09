@@ -188,6 +188,17 @@
 
             tap-ms = <20>;
         };
+
+        lt_and_continue_input: lt_and_continue_input {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_AND_CONTINUE_INPUT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <300>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
@@ -195,10 +206,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E         &kp R                   &kp T                                          &kp Y          &kp U      &kp I      &kp O    &kp P
-&kp A           &kp S         &kp D         &kp F                   &kp G        &kp CAPSLOCK       &kp MINUS      &kp H          &kp J      &kp K      &kp L    &mt RIGHT_SHIFT ENTER
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                   &kp V        &kp B              &kp SEMICOLON  &kp N          &kp M      &kp COMMA  &kp DOT  &mt LEFT_CONTROL SLASH
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 SPACE  &lt 2 SPACE  &lt 5 LC(SPACE)                   &kp BACKSPACE  &kp ENTER                                              &mt RC(RIGHT_SHIFT) PRINTSCREEN
+&kp Q           &kp W         &kp E         &kp R                   &kp T                                          &kp Y                               &kp U                   &kp I      &kp O    &kp P
+&kp A           &kp S         &kp D         &kp F                   &kp G        &kp CAPSLOCK       &kp MINUS      &kp H                               &kp J                   &kp K      &kp L    &mt RIGHT_SHIFT ENTER
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                   &kp V        &kp B              &kp SEMICOLON  &kp N                               &kp M                   &kp COMMA  &kp DOT  &mt LEFT_CONTROL SLASH
+&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 SPACE  &lt 2 SPACE  &lt 5 LC(SPACE)                   &lt_and_continue_input 3 BACKSPACE  &lt_to_layer_0 1 ENTER                                              &mt LS(LEFT_CONTROL) PRINTSCREEN
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
