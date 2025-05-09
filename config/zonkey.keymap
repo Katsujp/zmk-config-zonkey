@@ -261,7 +261,7 @@
 
         marks_layer {
             bindings = <
-&trans          &trans     &kp EQUAL   &trans     &kp TILDE                                  &kp BACKSLASH  &trans                &trans                 &kp PIPE        &kp PERCENT
+&trans          &trans     &kp EQUAL   &trans     &kp TILDE                                  &kp BACKSLASH  &kp PLUS              &trans                 &kp PIPE        &kp PERCENT
 &kp AT          &kp ASTRK  &kp DOLLAR  &trans     &trans     &trans           &kp BACKSLASH  &kp HASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
 &kp LEFT_SHIFT  &trans     &kp EXCL    &kp CARET  &trans     &kp BACKSLASH    &trans         &kp AMPERSAND  &kp MINUS             &trans                 &trans          &trans
 &trans          &trans     &trans      &trans     &trans     &trans                          &trans         &trans                                                                        &trans
@@ -272,10 +272,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                                &trans
+&trans          &trans  &trans  &trans  &trans                    &kp ESCAPE          &kp LS(LC(TAB))  &trans    &kp LC(TAB)  &trans
+&trans          &trans  &trans  &trans  &trans  &trans    &trans  &kp LA(LEFT_ARROW)  &mkp MB1         &mkp MB3  &mkp MB2     &kp LA(RIGHT_ARROW)
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans    &trans  &kp LS(X)           &trans           &trans    &trans       &trans
+&trans          &trans  &trans  &trans  &trans  &trans            &trans              &trans                                                       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
