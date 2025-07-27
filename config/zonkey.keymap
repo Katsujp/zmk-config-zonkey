@@ -80,7 +80,7 @@
 
         grave {
             bindings = <&kp GRAVE>;
-            key-positions = <11 10>;
+            key-positions = <11 13>;
         };
 
         left-bracket {
